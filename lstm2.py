@@ -36,7 +36,7 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 	return agg
 
 # load dataset
-dataset = read_csv('pollution.csv', header=0, index_col=0)
+dataset = read_csv('raw.csv', header=0, index_col=0)
 values = dataset.values
 # integer encode direction
 encoder = LabelEncoder()
